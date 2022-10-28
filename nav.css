@@ -9,8 +9,9 @@ vegasGold: #c5b358
 white: #fff
 black: #000  
 */
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Open+Sans:ital,wght@0,300;0,400;1,600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
 
 .navbar {
     display: flex;
@@ -18,13 +19,13 @@ black: #000
     align-items: center;
     padding: 0 2.5rem;
 }
-.logo{
+
+.logo {
     font-size: 2.2rem;
     margin: 0.75rem 2.5rem;
-    color: #c5b358;
+    color: #c5d358;
     font-family: 'Dancing Script', cursive;
 }
-
 
 .navbar-links ul {
     margin: 0;
@@ -43,12 +44,11 @@ black: #000
     color: #fff;
     padding: 0.5rem 2rem;
     display: block;
-}    
+}
 
 .navbar-links li:hover {
     background-color: #361356;
 }
-
 
 .toggle-button {
     position: absolute;
@@ -57,7 +57,7 @@ black: #000
     display: none;
     flex-direction: column;
     justify-content: space-between;
-    width:30px;
+    width: 30px;
     height: 20px;
 }
 
@@ -69,31 +69,33 @@ black: #000
 }
 
 
-@media (max-width: 800ox){
+@media (max-width: 800px) {
     .toggle-button {
         display: flex;
     }
-    
+
     .navbar-links {
         display: none;
         width: 100%;
     }
-    
+
     .navbar {
         flex-direction: column;
         align-items: flex-start;
     }
-    
+
     .navbar-links ul {
         width: 100%;
         flex-direction: column;
     }
-    
+
     .navbar-links li {
         text-align: center;
     }
-    
+
     .navbar-links.active {
         display: flex;
     }
 }
+
+
